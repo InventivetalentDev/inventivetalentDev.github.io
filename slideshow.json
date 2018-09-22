@@ -7,14 +7,14 @@
   {
     "title": "Spiget",
     "description": "Sed sit amet nunc ac neque varius sagittis.",
-    "bg": "https://yeleha.co/2Ny604w",
+    "bg": "img/spiget-background.png",
     "icon":"https://spiget.org/img/logo-text-x256.png",
     "href":"https://spiget.org"
   },
   {
     "title": "MineSkin",
     "description": "eget varius tellus efficitur nec",
-    "bg": "https://yeleha.co/2NuMohL",
+    "bg": "img/mineskin-background.png",
     "icon":"https://mineskin.org/img/mineskin-x256.png",
     "href":"https://mineskin.org"
   }
