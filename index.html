@@ -143,11 +143,13 @@
                     $(".lower-content").addClass("visible");
                 }, 4400);
 
+                let dragging = false;
+
                 $.ajax("./slideshow.json").done(function (slideData) {
                     console.log(slideData)
                     $.each(slideData, function (i, slide) {
                         console.log(slide)
-                        $(".slideshow").append('' +
+                        let el = $('' +
                             '<div class="slideshow-item" data-href="' + slide.href + '">' +
                             '  <div class="slideshow-item-background" style="background-image: url(\'' + slide.bg + '\')"></div>' +
                             '  <div class="slideshow-item-content flow-text">' +
@@ -162,19 +164,30 @@
                             '</div>' +
                             '  </div>' +
                             '</div>' +
-                            '')
+                            '');
+                        el.appendTo($(".slideshow"))
+
+                        el.on('mousedown', (e) => {
+                            dragging = false;
+                        });
+                        el.on('mousemove', (e) => {
+                            dragging = true;
+                        });
+                        el.on('mouseup', (e) => {
+                            if (!dragging) {
+                                window.open(slide.href + "?utm_source=inventivetalent.org&utm_medium=slideshow", "_blank")
+                            }
+                        });
                     })
 
                     $(".slideshow").slick({
                         arrows: false,
                         autoplay: true,
                         autoplaySpeed: 5000,
-                        slidesToShow: 1
+                        slidesToShow: 1,
+                        zIndex: 2
                     })
 
-                    $(".slideshow-item").click(function () {
-                        window.open($(this).data("href") + "?utm_source=inventivetalent.org&utm_medium=slideshow", "_blank")
-                    })
                 })
 
 
