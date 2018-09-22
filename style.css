@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
     /*margin-top: -1.7rem;*/
     /*position: absolute;*/
     min-height: 0;
-    height:0;
+    height: 0;
     width: 100%;
     transition: min-height 1s ease;
     /*animation: fullHeight 1s ease 4.0s forwards;*/
@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {
     height: 0;
     margin-top: -0.1rem;
     transition: min-height 1s ease;
+    cursor: pointer;
 }
 
 .slideshow-item.visible {
@@ -93,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 0;
     padding-left: 15vw;
-    width:90vw;
+    width: 90vw;
     color: white;
 }
 
@@ -103,7 +104,7 @@ body::-webkit-scrollbar-thumb {
 
 .slideshow-item-content {
     text-shadow: 2px 2px 2px black;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .slideshow-item-icon {
@@ -117,13 +118,13 @@ body::-webkit-scrollbar-thumb {
 
 .slideshow-item-left {
     width: 25%;
-    float:left
+    float: left
 }
 
 .slideshow-item-right {
     width: 75%;
-    float:left;
-    padding-top:10vh;
+    float: left;
+    padding-top: 10vh;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -149,19 +150,22 @@ body::-webkit-scrollbar-thumb {
         width: 16vw;
         height: 16vw;
     }
+
     .slideshow-item-background {
         background-size: cover;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .slideshow-item-left{
-    width:50%;
+    .slideshow-item-left {
+        width: 50%;
     }
-    .slideshow-item-right{
-    width:50%;
-        padding-top:20vh;
+
+    .slideshow-item-right {
+        width: 50%;
+        padding-top: 20vh;
     }
+
     .slideshow-item-icon {
         width: 20vw;
         height: 20vw;
@@ -170,11 +174,11 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 560px) {
     .slideshow-item-left {
-        width:40%;
+        width: 40%;
     }
 
     .slideshow-item-right {
-        width:60%;
+        width: 60%;
     }
 
     .slideshow-item-icon {
@@ -192,7 +196,7 @@ body::-webkit-scrollbar-thumb {
     /*margin-top: -1.7rem;*/
     /*position: absolute;*/
     height: 0;
-    min-height:0;
+    min-height: 0;
     width: 100%;
     transition: min-height 1s ease;
     /*animation: fullHeight 1s ease 4.0s forwards;*/

@@ -143,17 +143,17 @@
                     $.each(slideData, function (i, slide) {
                         console.log(slide)
                         $(".slideshow").append('' +
-                            '<div class="slideshow-item">' +
+                            '<div class="slideshow-item" data-href="' + slide.href + '">' +
                             '  <div class="slideshow-item-background" style="background-image: url(\'' + slide.bg + '\')"></div>' +
                             '  <div class="slideshow-item-content flow-text">' +
                             '<div class="slideshow-item-left">' +
                             '    <h2>' + slide.title + '</h2>' +
                             (slide.icon ? '    <div class="slideshow-item-icon" style="background-image: url(\'' + slide.icon + '\')"></div>' : '') +
-                                '</div>' +
-                            '<div class="slideshow-item-right">'+
+                            '</div>' +
+                            '<div class="slideshow-item-right">' +
                             '    <div class="slideshow-item-text flow-text">' +
-                            '<p>'+(slide.description || "")+'</p>' +
-                                '</div>'+
+                            '<p>' + (slide.description || "") + '</p>' +
+                            '</div>' +
                             '</div>' +
                             '  </div>' +
                             '</div>' +
@@ -165,6 +165,10 @@
                         autoplay: true,
                         autoplaySpeed: 5000,
                         slidesToShow: 1
+                    })
+
+                    $(".slideshow-item").click(function () {
+                        window.open($(this).data("href") + "?utm_source=inventivetalent.org&utm_medium=slideshow", "_blank")
                     })
                 })
 
