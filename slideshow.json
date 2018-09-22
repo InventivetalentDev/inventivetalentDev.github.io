@@ -1,8 +1,10 @@
 [
   {
-    "title": "Lorem Ipsum",
+    "title": "MineRender",
     "description": "dolor sit amet, consectetur adipiscing elit.",
-    "bg": "https://via.placeholder.com/1280x720"
+    "bg": "img/minerender-background.png",
+    "icon":"https://minerender.org/img/minerender-x256.png",
+    "href":"https://minerender.org"
   },
   {
     "title": "Spiget",
@@ -17,5 +19,12 @@
     "bg": "img/mineskin-background.png",
     "icon":"https://mineskin.org/img/mineskin-x256.png",
     "href":"https://mineskin.org"
+  },
+  {
+    "title": "Spigot Plugins",
+    "description": "eget varius tellus efficitur nec",
+    "bg": "img/spigot-background.png",
+    "icon":"img/spigot.png",
+    "href":"https://a.spiget.org/6643"
   }
 ]
