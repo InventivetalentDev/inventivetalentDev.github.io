@@ -150,10 +150,6 @@
             $(document).ready(function () {
                 $(this).scrollTop(0);
 
-                $(".fadeInBtn").on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function (event) {
-                    $(this).addClass("visible")
-                });
-
 
 
                 setTimeout(function () {
@@ -162,6 +158,8 @@
                 setTimeout(function () {
                     $(".slideshow-content").addClass("visible");
                     $(".slideshow-item").addClass("visible");
+
+                    $(".fadeInBtn").addClass("visible");
                 }, 4000);
                 setTimeout(function () {
                     $(".lower-content").addClass("visible");

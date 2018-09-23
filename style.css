@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 0;
 }
 
-.content{
+.content {
     background-color: white;
     color: Black;
     transition: min-height 1s ease;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
     /*position: absolute;*/
     min-height: 0;
     height: 0;
-    opacity:0;
+    opacity: 0;
     width: 100%;
     /*animation: fullHeight 1s ease 4.0s forwards;*/
     z-index: 10;
@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
 
 .upper-content.visible {
     min-height: 30vh;
-    opacity:1;
+    opacity: 1;
 }
 
 .upper-content > .container {
@@ -465,89 +465,88 @@ body::-webkit-scrollbar-thumb {
 .fadeInBtn {
     position: absolute;
     z-index: 5;
-    margin-top: 0%;
+    margin-top: 0rem;
     opacity: 0;
+    transition: margin-top 1s ease 0s, opacity 0.5s ease 0s;
 }
+
+.fadeInBtn.visible {
+    margin-top: -5rem;
+    opacity: 1;
+}
+
 
 .fadeInBtn.btn1 {
     left: 20vw;
-    animation: moveUpButton 1s ease 4.0s;
+    transition-delay:0s;
 }
 
 .fadeInBtn.btn2 {
     left: 30vw;
-    animation: moveUpButton 1s ease 4.1s;
+    transition-delay:0.1s;
 }
 
 .fadeInBtn.btn3 {
     right: 30vw;
-    animation: moveUpButton 1s ease 4.2s;
+    transition-delay:0.2s;
 }
 
 .fadeInBtn.btn4 {
     right: 20vw;
-    animation: moveUpButton 1s ease 4.3s;
+    transition-delay:0.3s;
 }
 
 @media only screen and (max-width: 700px) {
     .fadeInBtn.btn1 {
         left: 5vw;
-        animation: moveUpButton 1s ease 3.7s;
+        transition-delay:0s;
     }
 
     .fadeInBtn.btn2 {
         left: 25vw;
-        animation: moveUpButton 1s ease 3.8s;
+        transition-delay:0.1s;
     }
 
     .fadeInBtn.btn3 {
         right: 25vw;
-        animation: moveUpButton 1s ease 3.9s;
+        transition-delay:0.2s;
     }
 
     .fadeInBtn.btn4 {
         right: 5vw;
-        animation: moveUpButton 1s ease 3.9s;
+        transition-delay:0.3s;
     }
 }
 
-.fadeInBtn.visible {
-    opacity: 1 !important;
-    margin-top: -5rem !important;
-}
 
 @media only screen and (max-width: 416px) {
-    .fadeInBtn.visible {
-        opacity: 1 !important;
-    }
-
     .fadeInBtn.btn1 {
         left: 5vw;
         margin-top: -7rem !important;
-        animation: moveUpButtonMobileHigher 1s ease 3.7s;
+        transition-delay:0.1s;
     }
 
     .fadeInBtn.btn2 {
         left: 5vw;
         margin-top: -4rem !important;
-        animation: moveUpButtonMobileLower 1s ease 3.8s;
+        transition-delay:0.2s;
     }
 
     .fadeInBtn.btn3 {
         right: 5vw;
         margin-top: -4rem !important;
-        animation: moveUpButtonMobileLower 1s ease 3.9s;
+        transition-delay:0.3s;
     }
 
     .fadeInBtn.btn4 {
         right: 5vw;
         margin-top: -7rem !important;
-        animation: moveUpButtonMobileHigher 1s ease 3.9s;
+        transition-delay:0.4s;
     }
 }
 
-.embed{
-    display:none;
+.embed {
+    display: none;
 }
 
 .twitter-timeline {
@@ -602,35 +601,3 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@keyframes moveUpButton {
-    from {
-        margin-top: 0rem;
-        opacity: 0;
-    }
-    to {
-        margin-top: -5rem;
-        opacity: 1;
-    }
-}
-
-@keyframes moveUpButtonMobileLower {
-    from {
-        margin-top: 0rem;
-        opacity: 0;
-    }
-    to {
-        margin-top: -4rem;
-        opacity: 1;
-    }
-}
-
-@keyframes moveUpButtonMobileHigher {
-    from {
-        margin-top: 0rem;
-        opacity: 0;
-    }
-    to {
-        margin-top: -7rem;
-        opacity: 1;
-    }
-}
