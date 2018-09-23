@@ -81,7 +81,9 @@ body::-webkit-scrollbar-thumb {
     /*width: 1200px;*/
     /*height: 800px;*/
     height: 110%;
-    margin-top:-1%;
+    margin-top: -1%;
+
+    width: 100vw;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +127,6 @@ body::-webkit-scrollbar-thumb {
 .slideshow-item-right {
     width: 75%;
     float: left;
-    padding-top: 10vh;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -158,15 +159,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 700px) {
-    .slideshow-item-left {
-        width: 50%;
-    }
-
-    .slideshow-item-right {
-        width: 50%;
-        padding-top: 20vh;
-    }
-
     .slideshow-item-icon {
         width: 20vw;
         height: 20vw;
@@ -174,13 +166,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 560px) {
-    .slideshow-item-left {
-        width: 40%;
-    }
-
-    .slideshow-item-right {
-        width: 60%;
-    }
 
     .slideshow-item-icon {
         width: 22vw;
@@ -205,7 +190,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lower-content.visible {
-    min-height: 40vh;
+    min-height: 100vh;
 }
 
 .lower-content > .container {
