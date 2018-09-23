@@ -23,7 +23,7 @@
   {
     "title": "Spigot Plugins",
     "description": "Various Minecraft plugins for Spigot/Bukkit",
-    "bg": "img/spigot-background.jpg",
+    "bg": "img/spigot-background.png",
     "icon":"img/spigot.png",
     "href":"https://a.spiget.org/6643"
   }

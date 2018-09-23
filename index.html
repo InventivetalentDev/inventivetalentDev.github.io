@@ -93,7 +93,7 @@
                 </button>
             </div>
         </div>
-        <div class="upper-content">
+        <div class="content upper-content">
             <div class="container flow-text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et leo dolor. Sed ultrices rutrum eleifend. Ut elementum at velit tempor rhoncus. Maecenas auctor nibh risus, eget varius tellus efficitur nec. Curabitur lacinia pulvinar metus ut tincidunt. Fusce posuere elit vel sem luctus fermentum. Sed sit amet nunc ac neque varius sagittis.
@@ -113,7 +113,7 @@
                 <!--</div>-->
             </div>
         </div>
-        <div class="lower-content">
+        <div class="content lower-content">
             <div class="container flow-text">
                 <div class="row">
                     <p>
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="embed-content">
+        <div class="content embed-content">
             <div class="container flow-text">
                 <div class="row">
                     <div class="col s12 m12 l6">
@@ -154,20 +154,22 @@
                     $(this).addClass("visible")
                 });
 
+
+
                 setTimeout(function () {
                     $(".upper-content").addClass("visible");
-                }, 4000);
+                }, 3800);
                 setTimeout(function () {
                     $(".slideshow-content").addClass("visible");
                     $(".slideshow-item").addClass("visible");
-                }, 4200);
+                }, 4000);
                 setTimeout(function () {
                     $(".lower-content").addClass("visible");
-                }, 4400);
+                }, 4200);
                 setTimeout(function () {
                     $(".embed-content").addClass("visible");
                     $(".embed").fadeIn();
-                }, 4600);
+                }, 4400);
 
                 let dragging = false;
 
@@ -176,7 +178,7 @@
                     $.each(slideData, function (i, slide) {
                         console.log(slide)
                         let el = $('' +
-                            '<div class="slideshow-item" data-href="' + slide.href + '">' +
+                            '<div class="content slideshow-item" data-href="' + slide.href + '">' +
                             '  <div class="slideshow-item-background" style="background-image: url(\'' + slide.bg + '\');"></div>' +
                             '  <div class="slideshow-item-content flow-text">' +
                             '    <h2>' + slide.title + '</h2>' +
