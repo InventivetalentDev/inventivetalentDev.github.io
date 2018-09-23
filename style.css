@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .upper-content {
+    position: relative;
     /*margin-top: -1.7rem;*/
     /*position: absolute;*/
     min-height: 0;
