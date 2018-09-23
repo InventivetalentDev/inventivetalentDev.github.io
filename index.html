@@ -115,12 +115,29 @@
         </div>
         <div class="lower-content">
             <div class="container flow-text">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum accumsan dui ornare fringilla. Aliquam erat volutpat. Fusce feugiat lacus sit amet lectus vulputate ullamcorper. Maecenas ac dignissim neque. Donec imperdiet placerat sapien mattis pellentesque. Etiam suscipit nisl sed dolor tristique, nec tincidunt augue fermentum. Proin eget augue leo. Sed suscipit vitae tortor quis dignissim. Nunc lobortis nec odio eget sodales. Maecenas molestie pretium dapibus.
-
-                    Quisque tincidunt, nulla vel vestibulum egestas, eros diam ullamcorper magna, ac molestie nibh lacus vitae lorem. Quisque interdum id magna non pulvinar. Suspendisse potenti. Vestibulum fermentum ex eget ligula vulputate rutrum. Vivamus semper elementum nunc, id sagittis nulla maximus vehicula. Maecenas eget ipsum sem. Phasellus aliquet enim sit amet tristique cursus. Proin suscipit, nulla a rhoncus tristique, felis libero tempus nulla, in pretium est ex vitae libero. Suspendisse sed ornare velit. Mauris elementum eu velit quis tempus. Phasellus sagittis sapien et metus lobortis, quis tristique metus iaculis. Sed sed urna ac purus commodo rutrum. Proin venenatis elementum turpis, at ornare lorem malesuada eu. In eu eros malesuada, condimentum lectus eget, placerat arcu.
-
-                </p>
+                <div class="row">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum accumsan dui ornare fringilla. Aliquam erat volutpat. Fusce feugiat lacus sit amet lectus vulputate ullamcorper. Maecenas ac dignissim neque. Donec imperdiet placerat sapien mattis pellentesque. Etiam suscipit nisl sed dolor tristique, nec tincidunt augue fermentum. Proin eget augue leo. Sed
+                        suscipit vitae tortor quis dignissim. Nunc lobortis nec odio eget sodales. Maecenas molestie pretium dapibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="embed-content">
+            <div class="container flow-text">
+                <div class="row">
+                    <div class="col s12 m12 l6">
+                        <div class="embed">
+                            <a class="twitter-timeline" data-width="350" data-height="500" data-theme="dark" href="https://twitter.com/Inventivtalent?ref_src=twsrc%5Etfw">Tweets by Inventivtalent</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        <div class="embed">
+                            <iframe class="discord-embed" src="https://discordapp.com/widget?id=398243219961413653&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -131,7 +148,7 @@
 
         <script>
             $(document).ready(function () {
-                window.scrollTo(0, 0);
+                $(this).scrollTop(0);
 
                 $(".fadeInBtn").on("webkitAnimationEnd oanimationend msAnimationEnd animationend", function (event) {
                     $(this).addClass("visible")
@@ -147,6 +164,10 @@
                 setTimeout(function () {
                     $(".lower-content").addClass("visible");
                 }, 4400);
+                setTimeout(function () {
+                    $(".embed-content").addClass("visible");
+                    $(".embed").fadeIn();
+                }, 4600);
 
                 let dragging = false;
 

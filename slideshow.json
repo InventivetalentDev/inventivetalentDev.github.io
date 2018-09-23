@@ -1,28 +1,28 @@
 [
   {
     "title": "MineRender",
-    "description": "Vivamus in gravida mauris. Donec nec efficitur lorem, vitae placerat leo. Donec vulputate pellentesque dolor vel facilisis. Vivamus efficitur cursus lobortis.",
+    "description": "Library for client-side 3D renders of Minecraft Blocks, Skins, Items and more in browsers",
     "bg": "img/minerender-background.png",
     "icon":"https://minerender.org/img/minerender-x256.png",
     "href":"https://minerender.org"
   },
   {
     "title": "Spiget",
-    "description": "Sed vitae massa magna. Maecenas eu urna sed nulla maximus efficitur a pretium massa. Mauris euismod gravida ante, sed sodales nibh varius eget.",
+    "description": "REST-API to get information about resources and authors from SpigotMC.org",
     "bg": "img/spiget-background.png",
     "icon":"https://spiget.org/img/logo-text-x256.png",
     "href":"https://spiget.org"
   },
   {
     "title": "MineSkin",
-    "description": "Sed ipsum diam, consectetur eu nisl a, molestie luctus enim. Nulla ornare, lectus eget molestie ultricies, felis sem porttitor felis, vitae fermentum tellus est vel neque.",
+    "description": "Generator for Mojang-signed custom skin data",
     "bg": "img/mineskin-background.png",
     "icon":"https://mineskin.org/img/mineskin-x256.png",
     "href":"https://mineskin.org"
   },
   {
     "title": "Spigot Plugins",
-    "description": "Vestibulum accumsan, nisi eu elementum congue, lacus quam facilisis velit, aliquet faucibus nulla dui et arcu.",
+    "description": "Various Minecraft plugins for Spigot/Bukkit",
     "bg": "img/spigot-background.png",
     "icon":"img/spigot.png",
     "href":"https://a.spiget.org/6643"

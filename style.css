@@ -190,10 +190,37 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lower-content.visible {
-    min-height: 100vh;
+    min-height: 40vh;
 }
 
 .lower-content > .container {
+    padding-top: 0.2rem;
+}
+
+.embed-content {
+    background: white;
+    /*margin-top: -1.7rem;*/
+    /*position: absolute;*/
+    height: 0;
+    min-height: 0;
+    width: 100%;
+    transition: min-height 1s ease;
+    /*animation: fullHeight 1s ease 4.0s forwards;*/
+    z-index: 10;
+}
+
+.embed-content.visible {
+    min-height: 70vh;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .embed-content.visible {
+        min-height: 135vh;
+    }
+}
+
+.embed-content > .container {
     padding-top: 0.2rem;
 }
 
@@ -511,6 +538,26 @@ body::-webkit-scrollbar-thumb {
         margin-top: -7rem !important;
         animation: moveUpButtonMobileHigher 1s ease 3.9s;
     }
+}
+
+.embed{
+    display:none;
+}
+
+.twitter-timeline {
+    float: right;
+    min-width: 350px !important;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .twitter-timeline {
+        float: left;
+    }
+}
+
+.discord-embed {
+    padding: 5px;
 }
 
 @keyframes dash {
