@@ -566,6 +566,27 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 
+.avatar-img{
+    border-radius: 50%;
+    width:128px;
+    height:128px;
+    margin-top:32px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .avatar-img{
+        width:110px;
+        height:110px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .avatar-img{
+        width:100px;
+        height:100px;
+    }
+}
+
 @keyframes dash {
     to {
         stroke-dashoffset: 0;
