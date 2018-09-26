@@ -469,6 +469,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 0rem;
     opacity: 0;
     transition: margin-top 1s ease 0s, opacity 0.5s ease 0s;
+    cursor: pointer;
 }
 
 .fadeInBtn.visible {
