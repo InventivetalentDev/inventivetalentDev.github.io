@@ -477,73 +477,71 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
-
 .fadeInBtn.btn1 {
     left: 20vw;
-    transition-delay:0s;
+    transition-delay: 0s;
 }
 
 .fadeInBtn.btn2 {
     left: 30vw;
-    transition-delay:0.1s;
+    transition-delay: 0.1s;
 }
 
 .fadeInBtn.btn3 {
     right: 30vw;
-    transition-delay:0.2s;
+    transition-delay: 0.2s;
 }
 
 .fadeInBtn.btn4 {
     right: 20vw;
-    transition-delay:0.3s;
+    transition-delay: 0.3s;
 }
 
 @media only screen and (max-width: 700px) {
     .fadeInBtn.btn1 {
         left: 5vw;
-        transition-delay:0s;
+        transition-delay: 0s;
     }
 
     .fadeInBtn.btn2 {
         left: 25vw;
-        transition-delay:0.1s;
+        transition-delay: 0.1s;
     }
 
     .fadeInBtn.btn3 {
         right: 25vw;
-        transition-delay:0.2s;
+        transition-delay: 0.2s;
     }
 
     .fadeInBtn.btn4 {
         right: 5vw;
-        transition-delay:0.3s;
+        transition-delay: 0.3s;
     }
 }
-
 
 @media only screen and (max-width: 416px) {
     .fadeInBtn.btn1 {
         left: 5vw;
         margin-top: -7rem !important;
-        transition-delay:0.1s;
+        transition-delay: 0.1s;
     }
 
     .fadeInBtn.btn2 {
         left: 5vw;
         margin-top: -4rem !important;
-        transition-delay:0.2s;
+        transition-delay: 0.2s;
     }
 
     .fadeInBtn.btn3 {
         right: 5vw;
         margin-top: -4rem !important;
-        transition-delay:0.3s;
+        transition-delay: 0.3s;
     }
 
     .fadeInBtn.btn4 {
         right: 5vw;
         margin-top: -7rem !important;
-        transition-delay:0.4s;
+        transition-delay: 0.4s;
     }
 }
 
@@ -567,24 +565,30 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 
-.avatar-img{
+.avatar-img {
     border-radius: 50%;
-    width:128px;
-    height:128px;
-    margin-top:32px;
+    width: 0;
+    height: 0;
+    margin-top: 32px;
+    transition: width 1s ease, height 1s ease;
+}
+
+.avatar-img.visible {
+    width: 128px;
+    height: 128px;
 }
 
 @media only screen and (max-width: 1150px) {
-    .avatar-img{
-        width:110px;
-        height:110px;
+    .avatar-img.visible {
+        width: 110px;
+        height: 110px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .avatar-img{
-        width:100px;
-        height:100px;
+    .avatar-img.visible {
+        width: 100px;
+        height: 100px;
     }
 }
 
