@@ -136,18 +136,18 @@
                 </svg>
 
                 <!--<div class="flow-text">-->
-                    <!--<a class="fadeInBtn btn1 grey-text text-darken-3">-->
-                        <!--Lorem-->
-                    <!--</a>-->
-                    <!--<a class="fadeInBtn btn2 grey-text text-darken-3">-->
-                        <!--Ipsum-->
-                    <!--</a>-->
-                    <!--<a class="fadeInBtn btn3 grey-text text-darken-3">-->
-                        <!--dolor-->
-                    <!--</a>-->
-                    <!--<a class="fadeInBtn btn4 grey-text text-darken-3">-->
-                        <!--amet-->
-                    <!--</a>-->
+                <!--<a class="fadeInBtn btn1 grey-text text-darken-3">-->
+                <!--Lorem-->
+                <!--</a>-->
+                <!--<a class="fadeInBtn btn2 grey-text text-darken-3">-->
+                <!--Ipsum-->
+                <!--</a>-->
+                <!--<a class="fadeInBtn btn3 grey-text text-darken-3">-->
+                <!--dolor-->
+                <!--</a>-->
+                <!--<a class="fadeInBtn btn4 grey-text text-darken-3">-->
+                <!--amet-->
+                <!--</a>-->
                 <!--</div>-->
             </div>
         </div>
@@ -346,27 +346,29 @@
                     window.open("https://google.com/search?q=" + $(this).text().trim(), "_blank");
                 });
 
+                document.getElementById("separator_line_right").addEventListener("animationend", function () {
+                    setTimeout(function () {
+                        $(".upper-content").addClass("visible");
+                    }, 100);
+                    setTimeout(function () {
+                        $(".slideshow-content").addClass("visible");
+                        $(".slideshow-item").addClass("visible");
 
-                setTimeout(function () {
-                    $(".upper-content").addClass("visible");
-                }, 3800);
-                setTimeout(function () {
-                    $(".slideshow-content").addClass("visible");
-                    $(".slideshow-item").addClass("visible");
+                        $(".avatar-img").addClass("visible");
+                        // $(".fadeInBtn").addClass("visible");
+                    }, 400);
+                    setTimeout(function () {
+                        $(".lower-content").addClass("visible");
+                    }, 600);
+                    setTimeout(function () {
+                        $(".contact-content").addClass("visible");
+                    }, 800);
+                    setTimeout(function () {
+                        $(".embed-content").addClass("visible");
+                        $(".embed").fadeIn();
+                    }, 1000);
+                }, false);
 
-                    $(".avatar-img").addClass("visible");
-                    // $(".fadeInBtn").addClass("visible");
-                }, 4000);
-                setTimeout(function () {
-                    $(".lower-content").addClass("visible");
-                }, 4200);
-                setTimeout(function () {
-                    $(".contact-content").addClass("visible");
-                }, 4400);
-                setTimeout(function () {
-                    $(".embed-content").addClass("visible");
-                    $(".embed").fadeIn();
-                }, 4600);
 
                 let dragging = false;
 
