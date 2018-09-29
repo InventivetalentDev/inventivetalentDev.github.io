@@ -1,4 +1,4 @@
-$blue: #69a6d1;
+$blue: #298fa3;
 $grey: #424242;
 
 body {
@@ -123,60 +123,6 @@ body::-webkit-scrollbar-thumb {
 
 .slideshow-item.visible {
     min-height: 25vw;
-}
-
-@media only screen and (max-width: 1440px) {
-    .upper-content.visible {
-        min-height: 18vw;
-    }
-    .slideshow-item.visible {
-        min-height: 30vw;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .upper-content.visible {
-        min-height: 24vw;
-    }
-    .slideshow-item.visible {
-        min-height: 34vw;
-    }
-}
-
-@media only screen and (max-width: 830px) {
-    .upper-content.visible {
-        min-height: 28vw;
-    }
-    .slideshow-item.visible {
-        min-height: 40vw;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .upper-content.visible {
-        min-height: 42vw;
-    }
-    .slideshow-item.visible {
-        min-height: 42vw;
-    }
-}
-
-@media only screen and (max-width: 530px) {
-    .upper-content.visible {
-        min-height: 64vw;
-    }
-    .slideshow-item.visible {
-        min-height: 60vw;
-    }
-}
-
-@media only screen and (max-width: 370px) {
-    .upper-content.visible {
-        min-height: 94vw;
-    }
-    .slideshow-item.visible {
-        min-height: 74vw;
-    }
 }
 
 .slideshow-item-background {
@@ -306,9 +252,127 @@ body::-webkit-scrollbar-thumb {
     padding-top: 0.2rem;
 }
 
+.contact-content {
+    height: 0;
+    min-height: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.contact-content.visible {
+    min-height: 12vw;
+    opacity: 1;
+}
+
+.contact-content > .container {
+    padding-top: 0.2rem;
+}
+
+.contact {
+    display: inline-block;
+    background-color: $blue;
+    border-radius: 100%;
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.6em;
+    text-align: center;
+
+    a {
+        color: $grey;
+    }
+}
+
+.language {
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-bottom: 0.1em;
+
+    span {
+        border-radius: 50px;
+        background-color: $blue;
+        color: $grey;
+        padding: 0.0rem 0.6rem 0.2rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .upper-content.visible {
+        min-height: 18vw;
+    }
+    .slideshow-item.visible {
+        min-height: 30vw;
+    }
+    .contact-content.visible {
+        min-height: 28vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .upper-content.visible {
+        min-height: 24vw;
+    }
+    .slideshow-item.visible {
+        min-height: 34vw;
+    }
+    .contact-content.visible {
+        min-height: 30vw;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .upper-content.visible {
+        min-height: 28vw;
+    }
+    .slideshow-item.visible {
+        min-height: 40vw;
+    }
+    .contact-content.visible {
+        min-height: 40vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .upper-content.visible {
+        min-height: 42vw;
+    }
+    .slideshow-item.visible {
+        min-height: 42vw;
+    }
+    .contact-content.visible {
+        min-height: 70vw;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .upper-content.visible {
+        min-height: 64vw;
+    }
+    .slideshow-item.visible {
+        min-height: 60vw;
+    }
+    .contact-content.visible {
+        min-height: 120vw;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .upper-content.visible {
+        min-height: 94vw;
+    }
+    .slideshow-item.visible {
+        min-height: 74vw;
+    }
+    .contact-content.visible {
+        min-height: 162vw;
+    }
+}
+
 .embed-content {
     /*margin-top: -1.7rem;*/
     /*position: absolute;*/
+    padding-top: 1em;
     height: 0;
     min-height: 0;
     opacity: 0;
@@ -327,6 +391,7 @@ body::-webkit-scrollbar-thumb {
         min-height: 135vh;
     }
 }
+
 @media only screen and (max-width: 370px) {
     .embed-content.visible {
         min-height: 300vw;
@@ -670,6 +735,15 @@ body::-webkit-scrollbar-thumb {
 
 .discord-embed {
     padding: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .twitter-timeline {
+        min-width: 300px !important;
+    }
+    .discord-embed {
+        width: 300px !important;
+    }
 }
 
 @media only screen and (max-width: 370px) {

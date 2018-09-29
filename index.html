@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
 
         <link id="favicon" rel="shortcut icon" type="image/ico" href="favicon.ico">
@@ -125,6 +126,96 @@
                 </div>
             </div>
         </div>
+        <div class="content contact-content">
+            <div class="container flow-text">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h4>Contact</h4>
+                        <div class="contacts">
+                            <div class="contact">
+                                <a target="_blank" href="https://twitter.com/Inventivtalent" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a target="_blank" href="https://github.com/InventivetalentDev" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a target="_blank" href="https://discord.gg/nzAdvPc" title="Discord">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a target="_blank" href="https://keybase.io/inventivetalent" title="Keybase">
+                                    <i class="fab fa-keybase"></i>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a target="_blank" href="https://www.reddit.com/user/inventivetalentDev/" title="Reddit">
+                                    <i class="fab fa-reddit"></i>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a target="_blank" href="https://www.youtube.com/inventivetalent" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a target="_blank" href="https://www.paypal.me/inventivetalent" title="PayPal">
+                                    <i class="fab fa-paypal"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <h4>Languages & Technologies</h4>
+                        <div class="languages">
+                            <div class="language">
+                                <span>Java</span>
+                            </div>
+                            <div class="language">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="language">
+                                <span>PHP</span>
+                            </div>
+                            <div class="language">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="language">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="language">
+                                <span>Angular</span>
+                            </div>
+                            <div class="language">
+                                <span>React</span>
+                            </div>
+                            <div class="language">
+                                <span>NodeJS</span>
+                            </div>
+                            <div class="language">
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="language">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="language">
+                                <span>Android</span>
+                            </div>
+                            <div class="language">
+                                <span>Ionic</span>
+                            </div>
+                            <div class="language">
+                                <span>Cordova</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content embed-content">
             <div class="container flow-text">
                 <div class="row">
@@ -196,6 +287,10 @@
                     }
                 }
 
+                $(".language").click(function () {
+                    window.open("https://google.com/search?q=" + $(this).text().trim(), "_blank");
+                });
+
 
                 setTimeout(function () {
                     $(".upper-content").addClass("visible");
@@ -211,9 +306,12 @@
                     $(".lower-content").addClass("visible");
                 }, 4200);
                 setTimeout(function () {
+                    $(".contact-content").addClass("visible");
+                }, 4400);
+                setTimeout(function () {
                     $(".embed-content").addClass("visible");
                     $(".embed").fadeIn();
-                }, 4400);
+                }, 4600);
 
                 let dragging = false;
 
