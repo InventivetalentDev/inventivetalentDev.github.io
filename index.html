@@ -371,9 +371,7 @@
                 let dragging = false;
 
                 $.ajax("./slideshow.json").done(function (slideData) {
-                    console.log(slideData)
                     $.each(slideData, function (i, slide) {
-                        console.log(slide)
                         let el = $('' +
                             '<div class="content slideshow-item" data-href="' + slide.href + '">' +
                             '  <div class="slideshow-item-background" style="background-image: url(\'' + slide.bg + '\');"></div>' +
