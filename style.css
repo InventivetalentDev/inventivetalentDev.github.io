@@ -205,16 +205,26 @@ body::-webkit-scrollbar-thumb {
   .contact a {
     color: #424242; }
 
+.contact:hover {
+  background-color: #424242; }
+  .contact:hover a {
+    color: #298fa3; }
+
 .language {
   display: inline-block;
   font-size: 1.3rem;
-  margin-bottom: 0.1em; }
+  margin-bottom: 0.1em;
+  cursor: pointer; }
   .language span {
     border-radius: 50px;
     background-color: #298fa3;
     color: #424242;
     padding: 0.0rem 0.6rem 0.2rem;
     text-align: center; }
+
+.language span:hover {
+  background-color: #424242;
+  color: #298fa3; }
 
 @media only screen and (max-width: 1440px) {
   .upper-content.visible {

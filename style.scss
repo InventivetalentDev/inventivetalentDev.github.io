@@ -284,10 +284,19 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+.contact:hover {
+    background-color: $grey;
+
+    a {
+        color: $blue;
+    }
+}
+
 .language {
     display: inline-block;
     font-size: 1.3rem;
     margin-bottom: 0.1em;
+    cursor: pointer;
 
     span {
         border-radius: 50px;
@@ -296,6 +305,11 @@ body::-webkit-scrollbar-thumb {
         padding: 0.0rem 0.6rem 0.2rem;
         text-align: center;
     }
+}
+
+.language span:hover {
+    background-color: $grey;
+    color: $blue;
 }
 
 @media only screen and (max-width: 1440px) {
