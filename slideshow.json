@@ -3,28 +3,49 @@
     "title": "MineRender",
     "description": "Library for client-side 3D renders of Minecraft Blocks, Skins, Items and more in browsers",
     "bg": "img/minerender-background.jpg",
-    "icon":"https://minerender.org/img/minerender-x256.png",
-    "href":"https://minerender.org"
+    "icon": "https://minerender.org/img/minerender-x256.png",
+    "href": "https://minerender.org"
   },
   {
     "title": "Spiget",
     "description": "REST-API to get information about resources and authors from SpigotMC.org",
     "bg": "img/spiget-background.jpg",
-    "icon":"https://spiget.org/img/logo-text-x256.png",
-    "href":"https://spiget.org"
+    "icon": "https://spiget.org/img/logo-text-x256.png",
+    "href": "https://spiget.org"
   },
   {
     "title": "MineSkin",
     "description": "Generator for Mojang-signed custom skin data",
     "bg": "img/mineskin-background.jpg",
-    "icon":"https://mineskin.org/img/mineskin-x256.png",
-    "href":"https://mineskin.org"
+    "icon": "https://mineskin.org/img/mineskin-x256.png",
+    "href": "https://mineskin.org"
   },
   {
     "title": "Spigot Plugins",
     "description": "Various Minecraft plugins for Spigot/Bukkit",
     "bg": "img/spigot-background.png",
-    "icon":"img/spigot.png",
-    "href":"https://a.spiget.org/6643"
+    "icon": "img/spigot.png",
+    "href": "https://a.spiget.org/6643"
+  },
+  {
+    "title": "MCAuth",
+    "description": "API to authenticate & connect Minecraft accounts to website accounts",
+    "bg": "img/mcauth-background.jpg",
+    "icon": "https://mcauth.ga/img/mcauth-256.png",
+    "href": "https://mcauth.ga"
+  },
+  {
+    "title": "RemoteSlide",
+    "description": "Web App for controlling slides on your PC from your smartphone",
+    "bg": "img/remoteslide-background.jpg",
+    "icon": "https://remote-sli.de/img/logo-256.png",
+    "href": "https://remote-sli.de"
+  },
+  {
+    "title": "MCAssets",
+    "description": "Online Browser for Minecraft's asset files",
+    "bg": "img/mcassets-background.jpg",
+    "icon": "https://mcasset.cloud/img/mc-assets-2-256.png",
+    "href": "https://mcasset.cloud"
   }
 ]
