@@ -367,6 +367,9 @@
                     setTimeout(function () {
                         $(".upper-content").addClass("visible");
                     }, 100);
+                    $(".slideshow-item")[0].addEventListener("transitionend", function(event) {
+                        $(".slideshow").slick('setPosition');
+                    }, false);
                     setTimeout(function () {
                         $(".slideshow-content").addClass("visible");
                         $(".slideshow-item").addClass("visible");
