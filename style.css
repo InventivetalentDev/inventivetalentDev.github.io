@@ -187,7 +187,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 10; }
 
 .contact-content.visible {
-  min-height: 12vw;
+  min-height: 14vw;
   opacity: 1; }
 
 .contact-content > .container {
@@ -200,7 +200,8 @@ body::-webkit-scrollbar-thumb {
   width: 1.6em;
   height: 1.6em;
   font-size: 1.6em;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0.1em; }
   .contact a {
     color: #424242; }
 
