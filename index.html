@@ -294,6 +294,18 @@
             </div>
         </div>
 
+        <footer class="page-footer">
+            <div class="footer-copyright right-align">
+                <div class="container">
+                    <span>© inventivetalent</span>
+                    <span class="copyright-separator">&nbsp;|&nbsp;</span>
+                    <span>
+                        <a href="#imprint-modal" class="modal-trigger">Imprint</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
         <!-- Modal Structure -->
         <div id="imprint-modal" class="modal">
             <div class="modal-content">
@@ -372,6 +384,9 @@
                         $(".embed-content").addClass("visible");
                         $(".embed").fadeIn();
                     }, 1000);
+                    setTimeout(function () {
+                        $("footer").addClass("visible");
+                    }, 1200);
                 }, false);
 
 

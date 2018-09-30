@@ -417,6 +417,28 @@ body::-webkit-scrollbar-thumb {
     padding-top: 0.2rem;
 }
 
+footer {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+footer.visible {
+    opacity: 1;
+}
+
+.page-footer {
+    padding-top: 0 !important;
+}
+
+.page-footer .footer-copyright {
+    background-color: $grey;
+    color: lighten($blue, 10%) !important;
+}
+
+.copyright-separator {
+    color: darken($grey, 10%);
+}
+
 .logo {
     display: block;
     margin-left: auto;
