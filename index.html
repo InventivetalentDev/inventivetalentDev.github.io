@@ -3,9 +3,9 @@
     <head>
         <title>inventivetalent - Development and Web Design</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" as="style" onload="this.rel='stylesheet'">
         <link rel="stylesheet" href="style.css">
 
         <link id="favicon" rel="shortcut icon" type="image/ico" href="favicon.ico">
@@ -14,7 +14,7 @@
 
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="keywords" content="inventivetalent,yeleha,web design,development,developer,designer,java,html,php,javascript,css,spiget,spigotmc,mineskin,tools,webrender,web render">
         <meta name="description" content="I'm inventivetalent and I create Software, APIs, Websites, Backend Systems & design Frontend User Interfaces.">
@@ -190,42 +190,42 @@
                         <h4>Social & Contact</h4>
                         <div class="contacts">
                             <div class="contact">
-                                <a target="_blank" href="https://twitter.com/Inventivtalent" title="Twitter">
+                                <a target="_blank" rel="noopener" href="https://twitter.com/Inventivtalent" title="Twitter">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://github.com/InventivetalentDev" title="GitHub">
+                                <a target="_blank" rel="noopener" href="https://github.com/InventivetalentDev" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://discord.gg/nzAdvPc" title="Discord">
+                                <a target="_blank" rel="noopener" href="https://discord.gg/nzAdvPc" title="Discord">
                                     <i class="fab fa-discord"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://keybase.io/inventivetalent" title="Keybase">
+                                <a target="_blank" rel="noopener" href="https://keybase.io/inventivetalent" title="Keybase">
                                     <i class="fab fa-keybase"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://www.reddit.com/user/inventivetalentDev/" title="Reddit">
+                                <a target="_blank" rel="noopener" href="https://www.reddit.com/user/inventivetalentDev/" title="Reddit">
                                     <i class="fab fa-reddit"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://codepen.io/inventivetalent/" title="CodePen">
+                                <a target="_blank" rel="noopener" href="https://codepen.io/inventivetalent/" title="CodePen">
                                     <i class="fab fa-codepen"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://www.youtube.com/inventivetalent" title="YouTube">
+                                <a target="_blank" rel="noopener" href="https://www.youtube.com/inventivetalent" title="YouTube">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </div>
                             <div class="contact">
-                                <a target="_blank" href="https://www.paypal.me/inventivetalent" title="PayPal">
+                                <a target="_blank" rel="noopener" href="https://www.paypal.me/inventivetalent" title="PayPal">
                                     <i class="fab fa-paypal"></i>
                                 </a>
                             </div>
@@ -341,12 +341,13 @@
                 use, so must not serve either directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable (&sect; 106 of the copyright law).
                 <br/>
                 <br/>
-                <i>Quelle: </i><a href="http://www.twigg.de/haftungsausschlussimpressumenglisch.htm" target="_blank">twigg.de</a><br/><br/>
+                <i>Quelle: </i><a href="http://www.twigg.de/haftungsausschlussimpressumenglisch.htm" target="_blank" rel="noopener">twigg.de</a><br/><br/>
             </div>
         </div>
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/filamentgroup/loadCSS/v2.0.1/src/cssrelpreload.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous" async></script>
         <script src="https://donorbox.org/install-popup-button.js" type="text/javascript" defer></script>
