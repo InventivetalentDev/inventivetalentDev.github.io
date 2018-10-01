@@ -3,8 +3,8 @@ $grey: #424242;
 
 body {
     background: black;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
 }
 
 body::-webkit-scrollbar {
