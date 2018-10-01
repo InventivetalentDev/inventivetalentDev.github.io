@@ -241,10 +241,11 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     /*animation: fullHeight 1s ease 4.0s forwards;*/
     z-index: 10;
+    font-size: 1.4rem;
 }
 
 .lower-content.visible {
-    min-height: 40vh;
+    min-height: 10vw;
     opacity: 1;
 }
 
@@ -322,6 +323,9 @@ body::-webkit-scrollbar-thumb {
     .contact-content.visible {
         min-height: 28vw;
     }
+    .lower-content.visible {
+        min-height: 12vw;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -333,6 +337,9 @@ body::-webkit-scrollbar-thumb {
     }
     .contact-content.visible {
         min-height: 30vw;
+    }
+    .lower-content.visible {
+        min-height: 16vw;
     }
 }
 
@@ -346,6 +353,9 @@ body::-webkit-scrollbar-thumb {
     .contact-content.visible {
         min-height: 40vw;
     }
+    .lower-content.visible {
+        min-height: 22vw;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -357,6 +367,9 @@ body::-webkit-scrollbar-thumb {
     }
     .contact-content.visible {
         min-height: 70vw;
+    }
+    .lower-content.visible {
+        min-height: 34vw;
     }
 }
 
@@ -370,6 +383,9 @@ body::-webkit-scrollbar-thumb {
     .contact-content.visible {
         min-height: 120vw;
     }
+    .lower-content.visible {
+        min-height: 64vw;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -381,6 +397,9 @@ body::-webkit-scrollbar-thumb {
     }
     .contact-content.visible {
         min-height: 162vw;
+    }
+    .lower-content.visible {
+        min-height: 78vw;
     }
 }
 
