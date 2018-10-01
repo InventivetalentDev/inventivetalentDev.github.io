@@ -48,11 +48,11 @@ $(document).ready(function () {
         $.each(slideData, function (i, slide) {
             let el = $('' +
                 '<div class="content slideshow-item" data-href="' + slide.href + '">' +
-                '  <div class="slideshow-item-background" style="background-image: url(\'' + slide.bg + '\');"></div>' +
+                '  <div class="slideshow-item-background"></div>' +
                 '  <div class="slideshow-item-content flow-text">' +
                 '    <h2>' + slide.title + '</h2>' +
                 '    <div class="slideshow-item-left">' +
-                (slide.icon ? '      <div class="slideshow-item-icon" style="background-image: url(\'' + slide.icon + '\')"></div>' : '') +
+                (slide.icon ? '      <div class="slideshow-item-icon"></div>' : '') +
                 '    </div>' +
                 '    <div class="slideshow-item-right">' +
                 '      <div class="slideshow-item-text flow-text">' +
@@ -62,7 +62,16 @@ $(document).ready(function () {
                 '  </div>' +
                 '</div>' +
                 '');
-            el.appendTo($(".slideshow"))
+            el.appendTo($(".slideshow"));
+
+            setTimeout(function () {
+                el.find(".slideshow-item-background").css("background-image", "url('" + slide.bg + "')");
+            }, i * 200);
+            if (slide.icon) {
+                setTimeout(function () {
+                    el.find(".slideshow-item-icon").css("background-image", "url('" + slide.icon + "')");
+                }, i * 500);
+            }
 
             el.on('mousedown', (e) => {
                 dragging = false;
