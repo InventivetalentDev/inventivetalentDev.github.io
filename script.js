@@ -67,13 +67,16 @@ $(document).ready(function () {
 
     });
 
+    let avatar = $("#mercy");
+    avatar.attr("src", avatar.data("src"));
+
     let voicelines = [];
     $.ajax("https://api.github.com/repos/Js41637/Overwatch-Item-Tracker/contents/resources/heroes/mercy/voicelines").done(function (vs) {
         for (let i = 0; i < vs.length; i++) {
             voicelines.push(vs[i].path)
         }
     })
-    $("#mercy").click(function () {
+    avatar.click(function () {
         new Audio("https://cdn.rawgit.com/Js41637/Overwatch-Item-Tracker/development/" + voicelines[Math.floor(Math.random() * voicelines.length)]).play();
     })
 
