@@ -1,7 +1,7 @@
 [
   {
     "title": "MineRender",
-    "description": "Library for client-side 3D renders of Minecraft Blocks, Skins, Items and more in browsers",
+    "description": "Library for client-side 3D renders of Minecraft Blocks, Skins, Items and more",
     "bg": "img/minerender-background.jpg",
     "icon": "https://minerender.org/img/minerender-x256.png",
     "href": "https://minerender.org"
@@ -29,7 +29,7 @@
   },
   {
     "title": "MCAuth",
-    "description": "API to authenticate & connect Minecraft accounts to website accounts",
+    "description": "API to authenticate & connect Minecraft accounts to websites",
     "bg": "img/mcauth-background.jpg",
     "icon": "https://mcauth.ga/img/mcauth-256.png",
     "href": "https://mcauth.ga"
@@ -43,7 +43,7 @@
   },
   {
     "title": "MCAssets",
-    "description": "Online Browser for Minecraft's asset files",
+    "description": "Online Browser for Minecraft's asset files like Textures, Models & Sounds",
     "bg": "img/mcassets-background.jpg",
     "icon": "https://mcasset.cloud/img/mc-assets-2-256.png",
     "href": "https://mcasset.cloud"
