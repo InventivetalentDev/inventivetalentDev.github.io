@@ -155,7 +155,7 @@
             <div class="container flow-text">
                 <div class="row">
                     <div class="col l2 m3 s4">
-                        <img src="img/avatar.svg" alt="" class="avatar-img">
+                        <img src="img/avatar.svg" alt="" class="avatar-img" id="mercy">
                     </div>
                     <div class="col l10 m9 s8 welcome-text">
                         <h3>Hi!</h3>
@@ -367,8 +367,8 @@
                     setTimeout(function () {
                         $(".upper-content").addClass("visible");
                     }, 100);
-                    $(".slideshow-item")[0].addEventListener("transitionend", function(event) {
-                        $(".slideshow").slick('slickGoTo',0,true);
+                    $(".slideshow-item")[0].addEventListener("transitionend", function (event) {
+                        $(".slideshow").slick('slickGoTo', 0, true);
                     }, false);
                     setTimeout(function () {
                         $(".slideshow-content").addClass("visible");
@@ -436,8 +436,17 @@
                         zIndex: 2
                     })
 
-                })
+                });
 
+                let voicelines = [];
+                $.ajax("https://api.github.com/repos/Js41637/Overwatch-Item-Tracker/contents/resources/heroes/mercy/voicelines").done(function (vs) {
+                    for (let i = 0; i < vs.length; i++) {
+                        voicelines.push(vs[i].path)
+                    }
+                })
+                $("#mercy").click(function () {
+                    new Audio("https://cdn.rawgit.com/Js41637/Overwatch-Item-Tracker/development/" + voicelines[Math.floor(Math.random() * voicelines.length)]).play();
+                })
 
             })
         </script>
