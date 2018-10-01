@@ -2,27 +2,26 @@
     document.getElementById("separator_line_right").addEventListener("animationend", function () {
         setTimeout(function () {
             $(".upper-content").addClass("visible");
+            $(".avatar-img").addClass("visible");
         }, 100);
         $(".slideshow-content")[0].addEventListener("transitionend", function (event) {
             $(".slideshow").slick('slickGoTo', 0, true);
         }, false);
         setTimeout(function () {
             $(".slideshow-content").addClass("visible");
-
-            $(".avatar-img").addClass("visible");
-        }, 400);
-        setTimeout(function () {
-            $(".lower-content").addClass("visible");
         }, 600);
         setTimeout(function () {
+            $(".lower-content").addClass("visible");
+        }, 1100);
+        setTimeout(function () {
             $(".contact-content").addClass("visible");
-        }, 800);
+        }, 1600);
         setTimeout(function () {
             $(".embed-content").addClass("visible");
             $(".embed").fadeIn();
-        }, 1000);
+        }, 2100);
         setTimeout(function () {
             $("footer").addClass("visible");
-        }, 1200);
+        }, 2600);
     }, false);
 })();

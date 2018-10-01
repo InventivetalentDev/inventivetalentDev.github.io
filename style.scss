@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
     //transition: min-height 1s ease;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 1s ease;
+    transition: transform 0.5s linear;
     margin-bottom: -20px;
 }
 
@@ -808,7 +808,7 @@ footer.visible {
     height: 128px;
     margin-top: 32px;
     transform: scale(0);
-    transition: transform 1s ease;
+    transition: transform 1s cubic-bezier(0.33, 0.93, 0.35, 1.4) 0.5s;
 }
 
 .avatar-img.visible {
