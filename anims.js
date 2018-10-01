@@ -3,15 +3,13 @@
         setTimeout(function () {
             $(".upper-content").addClass("visible");
         }, 100);
-        $(".slideshow-item")[0].addEventListener("transitionend", function (event) {
+        $(".slideshow-content")[0].addEventListener("transitionend", function (event) {
             $(".slideshow").slick('slickGoTo', 0, true);
         }, false);
         setTimeout(function () {
             $(".slideshow-content").addClass("visible");
-            $(".slideshow-item").addClass("visible");
 
             $(".avatar-img").addClass("visible");
-            // $(".fadeInBtn").addClass("visible");
         }, 400);
         setTimeout(function () {
             $(".lower-content").addClass("visible");
