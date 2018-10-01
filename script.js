@@ -37,11 +37,11 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 el.find(".slideshow-item-background").css("background-image", "url('" + slide.bg + "')");
-            }, i * 200);
+            }, i * 500);
             if (slide.icon) {
                 setTimeout(function () {
                     el.find(".slideshow-item-icon").css("background-image", "url('" + slide.icon + "')");
-                }, i * 500);
+                }, i * 1000);
             }
 
             el.on('mousedown', (e) => {
