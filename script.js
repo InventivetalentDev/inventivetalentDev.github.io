@@ -18,7 +18,7 @@ $(document).ready(function () {
     $.ajax("./slideshow.json").done(function (slideData) {
         $.each(slideData, function (i, slide) {
             let el = $('' +
-                '<div class="content slideshow-item" data-href="' + slide.href + '">' +
+                '<div class="slideshow-item" data-href="' + slide.href + '">' +
                 '  <div class="slideshow-item-background"></div>' +
                 '  <div class="slideshow-item-content flow-text">' +
                 '    <h2>' + slide.title + '</h2>' +
