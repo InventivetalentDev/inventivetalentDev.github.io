@@ -1,0 +1,32 @@
+{
+  "name": "inventivetalent - Development and Web Design",
+  "short_name": "inventivetalent",
+  "description": "I'm inventivetalent and I create Software, APIs, Websites, Backend Systems & design Frontend User Interfaces.",
+  "lang": "en-US",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#298fa3",
+  "icons": [
+    {
+      "src": "img/logo_transparent-x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo_transparent-x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo_transparent-x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo_transparent-x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
