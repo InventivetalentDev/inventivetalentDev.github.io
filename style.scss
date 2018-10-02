@@ -26,6 +26,10 @@ body::-webkit-scrollbar-thumb {
     z-index: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 .content {
     background-color: white;
     color: black;

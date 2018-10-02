@@ -1,5 +1,7 @@
 (function () {
     document.getElementById("separator_line_right").addEventListener("animationend", function () {
+        $("main").removeClass("hidden");
+
         setTimeout(function () {
             $(".upper-content").addClass("visible");
             $(".avatar-img").addClass("visible");
