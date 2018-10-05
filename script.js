@@ -60,7 +60,7 @@ $(document).ready(function () {
         $(".slideshow").slick({
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3500,
             slidesToShow: 1,
             zIndex: 2
         })
