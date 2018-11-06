@@ -1,5 +1,12 @@
 [
   {
+    "title": "PluginBlueprint",
+    "description": "Create Plugins for Bukkit/Spigot with a node-based drag&drop system, inspired by UE4 Blueprints",
+    "bg": "img/pluginblueprint-background.jpg",
+    "icon": "img/pluginblueprint.png",
+    "href": "https://pluginblueprint.inventivetalent.org"
+  },
+  {
     "title": "MineRender",
     "description": "Library for client-side 3D renders of Minecraft Blocks, Skins, Items and more",
     "bg": "img/minerender-background.jpg",
