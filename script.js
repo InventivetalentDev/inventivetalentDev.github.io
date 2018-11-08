@@ -18,7 +18,7 @@ $(document).ready(function () {
     $.ajax("./slideshow.json").done(function (slideData) {
         $.each(slideData, function (i, slide) {
             let el = $('' +
-                '<div class="slideshow-item" data-href="' + slide.href + '">' +
+                '<a class="slideshow-item" data-href="' + slide.href + '" href="' + slide.href + '?utm_source=inventivetalent.org&utm_medium=slideshow" target="_blank">' +
                 '  <div class="slideshow-item-background"></div>' +
                 '  <div class="slideshow-item-content flow-text">' +
                 '    <h2>' + slide.title + '</h2>' +
@@ -31,7 +31,7 @@ $(document).ready(function () {
                 '      </div>' +
                 '    </div>' +
                 '  </div>' +
-                '</div>' +
+                '</a>' +
                 '');
             el.appendTo($(".slideshow"));
 
