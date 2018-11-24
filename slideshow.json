@@ -38,8 +38,8 @@
     "title": "MCAuth",
     "description": "API to authenticate & connect Minecraft accounts to websites",
     "bg": "img/mcauth-background.jpg",
-    "icon": "https://mcauth.ga/img/mcauth-256.png",
-    "href": "https://mcauth.ga"
+    "icon": "https://mcauth.org/img/mcauth-256.png",
+    "href": "https://mcauth.org"
   },
   {
     "title": "RemoteSlide",
