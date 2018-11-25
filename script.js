@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    // https://github.com/kenwheeler/slick/issues/359#issuecomment-50624066
+    $.fn.randomize = function(selector){
+        let $elems = selector ? $(this).find(selector) : $(this).children(),
+            $parents = $elems.parent();
+
+        $parents.each(function(){
+            $(this).children(selector).sort(function(){
+                return Math.round(Math.random()) - 0.5;
+            }).detach().appendTo(this);
+        });
+
+        return this;
+    };
+
     $(this).scrollTop(0);
 
     $(".modal").modal();
@@ -40,13 +54,14 @@ $(document).ready(function () {
         });
     });
 
+    $(".slideshow").randomize(".slideshow-item");
     $(".slideshow").slick({
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3500,
         slidesToShow: 1,
         zIndex: 2
-    })
+    });
 
     let avatar = $("#mercy");
     avatar.attr("src", avatar.data("src"));
