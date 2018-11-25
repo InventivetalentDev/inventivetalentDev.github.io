@@ -54,5 +54,12 @@
     "bg": "img/mcassets-background.jpg",
     "icon": "https://mcasset.cloud/img/mc-assets-2-256.png",
     "href": "https://mcasset.cloud"
+  },
+  {
+    "title": "WebRender",
+    "description": "Take screenshots of any website",
+    "bg": "img/webrender-background.jpg",
+    "icon": "https://webrender.co/img/webrender-x256.png",
+    "href": "https://webrender.co"
   }
 ]
