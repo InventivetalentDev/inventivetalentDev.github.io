@@ -13,7 +13,7 @@ fs.readFile(path.join(__dirname, "../slideshow.json"), "utf-8", function (err, s
         let slide = slideshowContent[i];
 
         generatedSlideshowHtml += '\n<!-- Slide #' + (i + 1) + ' -->' +
-            '\n<a class="slideshow-item" data-bg="' + slide.bg + '" data-icon="' + slide.icon + '" data-href="' + slide.href + '" href="' + slide.href + '?utm_source=inventivetalent.org&utm_medium=slideshow" target="_blank">' +
+            '\n<a class="slideshow-item" data-bg="' + slide.bg + '" data-icon="' + slide.icon + '" data-href="' + slide.href + '" href="' + slide.href + '?utm_source=inventivetalent.org&utm_medium=slideshow" title="' + slide.title + '" target="_blank">' +
             '\n  <div class="slideshow-item-background"></div>' +
             '\n  <div class="slideshow-item-content flow-text">' +
             '\n    <h2>' + slide.title + '</h2>' +
