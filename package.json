@@ -4,11 +4,12 @@
   "description": "",
   "main": "anims.js",
   "scripts": {
-    "build": "node ./scripts/build.js"
+    "build": "npm run style && node ./scripts/build.js",
+    "style": "sass --style compressed style.scss style.css && sass --style compressed logo.scss logo.css"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.inventivetalent.org/inventivetalent/inventivetalent.org.git"
+    "url": "https://github.com/InventivetalentDev/inventivetalentDev.github.io.git"
   },
   "author": "inventivetalent",
   "license": "MIT"

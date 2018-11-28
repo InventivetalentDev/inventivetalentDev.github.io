@@ -1,5 +1,5 @@
 (function () {
-    document.getElementById("separator_line_right").addEventListener("animationend", function () {
+    document.getElementById("separator_line").addEventListener("animationend", function () {
         $("main").removeClass("hidden");
 
         setTimeout(function () {
