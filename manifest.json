@@ -9,12 +9,12 @@
   "theme_color": "#298fa3",
   "icons": [
     {
-      "src": "img/black_white-x64.png",
+      "src": "img/lightbulb_inverted-x64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "img/black_white-x128.png",
+      "src": "img/lightbulb_inverted-x128.png",
       "sizes": "128x128",
       "type": "image/png"
     },
