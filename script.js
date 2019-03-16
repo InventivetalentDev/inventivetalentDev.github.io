@@ -20,6 +20,9 @@ $(document).ready(function () {
         if ("#imprint" === location.hash) {
             M.Modal.getInstance($("#imprint-modal")).open();
         }
+        if ("#privacy" === location.hash) {
+            M.Modal.getInstance($("#privacy-modal")).open();
+        }
     }
 
     $(".language").click(function () {
