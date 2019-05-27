@@ -20,7 +20,7 @@ $(document).ready(function () {
         if ("#imprint" === location.hash) {
             M.Modal.getInstance($("#imprint-modal")).open();
         }
-        if ("#privacy" === location.hash) {
+        if ("#privacy" ===  location.hash) {
             M.Modal.getInstance($("#privacy-modal")).open();
         }
     }
@@ -34,37 +34,38 @@ $(document).ready(function () {
 
         let bg = el.data("bg");
         let icon = el.data("icon");
-        setTimeout(function () {
-            el.find(".slideshow-item-background").css("background-image", "url('" + bg + "')");
-        }, i * 500);
-        if (icon) {
-            setTimeout(function () {
-                el.find(".slideshow-item-icon").css("background-image", "url('" + icon + "')");
-            }, i * 1000);
-        }
+        // setTimeout(function () {
+        //     el.find(".slideshow-item-background").css("background-image", "url('" + bg + "')");
+        // }, i * 500);
+        // if (icon) {
+        //     setTimeout(function () {
+        //         el.find(".slideshow-item-icon").css("background-image", "url('" + icon + "')");
+        //     }, i * 1000);
+        // }
 
         let dragging = false;
-        el.on('mousedown', (e) => {
-            dragging = false;
-        });
-        el.on('mousemove', (e) => {
-            dragging = true;
-        });
+        // el.on('mousedown', (e) => {
+        //     dragging = false;
+        // });
+        // el.on('mousemove', (e) => {
+        //     dragging = true;
+        // });
         el.on('mouseup', (e) => {
+            console.log(e)
             if (!dragging) {
                 window.open(el.data("href") + "?utm_source=inventivetalent.org&utm_medium=slideshow", "_blank")
             }
         });
     });
 
-    $(".slideshow").randomize(".slideshow-item");
-    $(".slideshow").slick({
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 3500,
-        slidesToShow: 1,
-        zIndex: 2
-    });
+    $(".slideshow-content").randomize(".project-wrapper");
+    // $(".slideshow").slick({
+    //     arrows: false,
+    //     autoplay: true,
+    //     autoplaySpeed: 3500,
+    //     slidesToShow: 1,
+    //     zIndex: 2
+    // });
 
     let avatar = $("#mercy");
     avatar.attr("src", avatar.data("src"));

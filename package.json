@@ -12,5 +12,8 @@
     "url": "https://github.com/InventivetalentDev/inventivetalentDev.github.io.git"
   },
   "author": "inventivetalent",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.20.1"
+  }
 }
