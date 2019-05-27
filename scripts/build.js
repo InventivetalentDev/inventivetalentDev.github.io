@@ -12,22 +12,33 @@ fs.readFile(path.join(__dirname, "../slideshow.json"), "utf-8", function (err, s
     for (let i = 0; i < slideshowContent.length; i++) {
         let slide = slideshowContent[i];
 
-        generatedSlideshowHtml += '\n<!-- Slide #' + (i + 1) + ' -->' +
-            '\n<a class="slideshow-item" data-bg="' + slide.bg + '" data-icon="' + slide.icon + '" data-href="' + slide.href + '" href="' + slide.href + '?utm_source=inventivetalent.org&utm_medium=slideshow" title="' + slide.title + '" target="_blank">' +
-            '\n  <div class="slideshow-item-background"></div>' +
-            '\n  <div class="slideshow-item-content flow-text">' +
-            '\n    <h2>' + slide.title + '</h2>' +
-            '\n    <div class="slideshow-item-left">' +
-            (slide.icon ? '      <div class="slideshow-item-icon"></div>' : '') +
-            '\n    </div>' +
-            '\n    <div class="slideshow-item-right">' +
-            '\n      <div class="slideshow-item-text flow-text">' +
-            '\n        <p>' + (slide.description || "") + '</p>' +
-            '\n      </div>' +
-            '\n    </div>' +
-            '\n  </div>' +
-            '\n</a>' +
-            '\n'
+        generatedSlideshowHtml +='\n <div class="project-wrapper col s12 m6 l4">\n' +
+            '                    <div class="project-card slideshow-item card blue-grey darken-1" data-href="'+slide.href+'">\n' +
+            '                        <div class="white-text">\n' +
+            '                            <img class="card-bg" src="'+ slide.bg +'">\n' +
+            '                            <span class="card-title">'+slide.title+'</span>\n' +
+            '                            <img class="card-icon" src="'+slide.icon+'">\n' +
+            '                            <p class="card-text">'+ (slide.description || "") + '</p>\n' +
+            '                        </div>\n' +
+            '                    </div>\n' +
+            '                </div>';
+
+        // generatedSlideshowHtml += '\n<!-- Slide #' + (i + 1) + ' -->' +
+        //     '\n<a class="slideshow-item" data-bg="' + slide.bg + '" data-icon="' + slide.icon + '" data-href="' + slide.href + '" href="' + slide.href + '?utm_source=inventivetalent.org&utm_medium=slideshow" title="' + slide.title + '" target="_blank">' +
+        //     '\n  <div class="slideshow-item-background"></div>' +
+        //     '\n  <div class="slideshow-item-content flow-text">' +
+        //     '\n    <h2>' + slide.title + '</h2>' +
+        //     '\n    <div class="slideshow-item-left">' +
+        //     (slide.icon ? '      <div class="slideshow-item-icon"></div>' : '') +
+        //     '\n    </div>' +
+        //     '\n    <div class="slideshow-item-right">' +
+        //     '\n      <div class="slideshow-item-text flow-text">' +
+        //     '\n        <p>' + (slide.description || "") + '</p>' +
+        //     '\n      </div>' +
+        //     '\n    </div>' +
+        //     '\n  </div>' +
+        //     '\n</a>' +
+        //     '\n'
     }
 
     console.log("Reading original index.html...");
