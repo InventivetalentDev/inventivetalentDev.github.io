@@ -1,5 +1,12 @@
 [
   {
+    "title": "TrashApp",
+    "description": "Android App to find nearby trashcans",
+    "bg": "img/trashapp-background.jpg",
+    "icon": "img/trashapp.png",
+    "href": "https://trashapp.inventivetalent.org"
+  },
+  {
     "title": "Key.Pics",
     "description": "Quick, Simple, Consistent, Scalable Key & Button Icons for visualizing inputs",
     "bg": "img/keypics-background.jpg",
