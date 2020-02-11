@@ -57,6 +57,11 @@ $background: #232323;
 }
 
 #lightbulb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+
     animation-name: pulse-start, pulse;
     animation-duration: 0.5s, 2s;
     animation-delay: 1.7s, 2.2s;
