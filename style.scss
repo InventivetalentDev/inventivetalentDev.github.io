@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     height: 190px;
     cursor: pointer;
+    transition: box-shadow 150ms ease-out;
 }
 
 .project-card img.card-bg {
@@ -85,6 +86,10 @@ body::-webkit-scrollbar-thumb {
     filter: drop-shadow(2px 2px 2px black);
     max-width: 30%;
     height: auto;
+}
+
+.project-card:hover{
+    box-shadow: 0 0 8px $grey;
 }
 
 
