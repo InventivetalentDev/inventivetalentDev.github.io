@@ -49,11 +49,11 @@
     "href": "https://a.spiget.org/6643"
   },
   {
-    "title": "MCAuth",
+    "title": "MinecraftID",
     "description": "API to authenticate & connect Minecraft accounts to websites",
     "bg": "img/mcauth-background.jpg",
-    "icon": "https://mcauth.org/img/mcauth-256.png",
-    "href": "https://mcauth.org"
+    "icon": "https://minecraft.id/img/mcauth-256.png",
+    "href": "https://minecraft.id"
   },
   {
     "title": "RemoteSlide",
