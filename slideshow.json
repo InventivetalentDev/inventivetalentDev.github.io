@@ -75,5 +75,12 @@
     "bg": "img/webrender-background.jpg",
     "icon": "https://webrender.co/img/webrender-x256.png",
     "href": "https://webrender.co"
+  },
+  {
+    "title": "VRKnock",
+    "description": "App to send messages to people in virtual reality",
+    "bg": "img/vrknock-background.jpg",
+    "icon": "https://vrknock.app/img/web_hi_res_512.png",
+    "href": "https://vrknock.app"
   }
 ]
