@@ -15,21 +15,15 @@ jobs:
       - name: Build
         run: npm install && npm run build
         
-      - name: Sleep for 10 seconds
+      - name: Sleep for 5 seconds
         uses: jakejarvis/wait-action@master
         with:
-          time: '10s'
+          time: '5s'
         
       - name: Git Add
         run: git add * 
         
-      - uses: mikeal/publish-to-github-action@master
+      - name: Deploy 🚀
+        uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
