@@ -22,6 +22,10 @@ jobs:
         
       - name: Git Add
         run: git add * && git commit -m "Build Page"
+        
+      - uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
