@@ -21,7 +21,7 @@ jobs:
           time: '10s'
         
       - name: Git Add
-        run: git add *
+        run: git add * && git commit -m "Build Page"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
