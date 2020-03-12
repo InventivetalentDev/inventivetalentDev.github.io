@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v1
 
       - name: Build
-        run: npm run build
+        run: npm install && npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
