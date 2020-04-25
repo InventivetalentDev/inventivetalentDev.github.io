@@ -3,7 +3,7 @@
     "title": "TrashApp",
     "description": "Android App to find nearby trashcans",
     "bg": "img/trashapp-background.jpg",
-    "icon": "img/trashapp.png",
+    "icon": "%cdn%/brand/trashapp/trashcan_arrow-x256.png",
     "href": "https://trashapp.inventivetalent.org"
   },
   {
@@ -17,7 +17,7 @@
     "title": "PluginBlueprint",
     "description": "Create Plugins for Bukkit/Spigot with a node-based drag&drop system, inspired by UE4 Blueprints",
     "bg": "img/pluginblueprint-background.jpg",
-    "icon": "img/pluginblueprint.png",
+    "icon": "%cdn%/brand/pluginblueprint/Small-x256.png",
     "href": "https://pluginblueprint.net"
   },
   {
@@ -31,14 +31,14 @@
     "title": "Spiget",
     "description": "REST-API to get information about resources and authors from SpigotMC.org",
     "bg": "img/spiget-background.jpg",
-    "icon": "https://spiget.org/img/logo-text-x256.png",
+    "icon": "%cdn%/brand/spiget/logo_text-x256.png",
     "href": "https://spiget.org"
   },
   {
     "title": "MineSkin",
     "description": "Generator for Mojang-signed custom skin data",
     "bg": "img/mineskin-background.jpg",
-    "icon": "https://mineskin.org/img/mineskin-x256.png",
+    "icon": "%cdn%/brand/mineskin/mineskin-x256.png",
     "href": "https://mineskin.org"
   },
   {
@@ -66,7 +66,7 @@
     "title": "MCAssets",
     "description": "Online Browser for Minecraft's asset files like Textures, Models & Sounds",
     "bg": "img/mcassets-background.jpg",
-    "icon": "https://mcasset.cloud/img/mc-assets-2-256.png",
+    "icon": "%cdn%/brand/mcassets/mcassets-x256.png",
     "href": "https://mcasset.cloud"
   },
   {
@@ -87,7 +87,7 @@
     "title": "PostBoxObserver",
     "description": "Utilize an old Smartphone to be notified about Mail in a PostBox!",
     "bg": "img/postbox-background.jpg",
-    "icon": "https://res.cloudinary.com/inventivetalent/image/upload/brand/postbox/eye_letter-x512.png",
+    "icon": "%cdn%/brand/postbox/eye_letter-x256.png",
     "href": "https://github.com/InventivetalentDev/PostBoxObserver"
   }
 ]

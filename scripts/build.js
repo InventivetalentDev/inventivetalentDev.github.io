@@ -17,7 +17,7 @@ fs.readFile(path.join(__dirname, "../slideshow.json"), "utf-8", function (err, s
             '                        <div class="white-text">\n' +
             '                            <img class="card-bg" src="'+ slide.bg +'">\n' +
             '                            <span class="card-title">'+slide.title+'</span>\n' +
-            '                            <img class="card-icon" src="'+slide.icon+'">\n' +
+            '                            <img class="card-icon" src="'+slide.icon.replace("%cdn%","https://res.cloudinary.com/inventivetalent/image/upload/")+'">\n' +
             '                            <p class="card-text">'+ (slide.description || "") + '</p>\n' +
             '                        </div>\n' +
             '                    </div>\n' +
