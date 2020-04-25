@@ -82,5 +82,12 @@
     "bg": "img/vrknock-background.jpg",
     "icon": "https://vrknock.app/img/web_hi_res_512.png",
     "href": "https://vrknock.app"
+  },
+  {
+    "title": "PostBoxObserver",
+    "description": "Utilize an old Smartphone to be notified about Mail in a PostBox!",
+    "bg": "img/postbox-background.jpg",
+    "icon": "https://res.cloudinary.com/inventivetalent/image/upload/brand/postbox/eye_letter-x512.png",
+    "href": "https://github.com/InventivetalentDev/PostBoxObserver"
   }
 ]
