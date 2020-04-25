@@ -21,7 +21,7 @@ jobs:
           time: '5s'
         
       - name: Git Add
-        run: git add * || "failed to add :c"
+        run: git add * || echo "failed to add :c"
         
       - name: Deploy 🚀
         uses: mikeal/publish-to-github-action@master
