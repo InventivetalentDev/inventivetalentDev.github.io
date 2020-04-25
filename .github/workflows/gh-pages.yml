@@ -21,7 +21,7 @@ jobs:
           time: '5s'
         
       - name: Git Add
-        run: git config advice.addIgnoredFile false && git add * 
+        run: git add * || "failed to add :c"
         
       - name: Deploy 🚀
         uses: mikeal/publish-to-github-action@master
