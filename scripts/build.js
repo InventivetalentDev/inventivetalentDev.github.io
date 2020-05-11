@@ -12,13 +12,47 @@ fs.readFile(path.join(__dirname, "../slideshow.json"), "utf-8", function (err, s
     for (let i = 0; i < slideshowContent.length; i++) {
         let slide = slideshowContent[i];
 
-        generatedSlideshowHtml +='\n <div class="project-wrapper col s12 m6 l4">\n' +
-            '                    <div class="project-card slideshow-item card blue-grey darken-1" data-href="'+slide.href+'">\n' +
+        let languageStr = "";
+        for (let j = 0; j < slide.languages.length; j++) {
+            let lang = slide.languages[j];
+
+            languageStr += '<div class="language" title="' + lang + '">';
+
+            if (lang.toLowerCase() === "javascript") {
+                languageStr += '<i class="fab fa-js"></i>'
+            } else if (lang.toLowerCase() === "java") {
+                languageStr += '<i class="fab fa-java"></i>'
+            } else if (lang.toLowerCase() === "html" || lang.toLowerCase() === "html5") {
+                languageStr += '<i class="fab fa-html5"></i>'
+            } else if (lang.toLowerCase() === "android") {
+                languageStr += '<i class="fab fa-android"></i>'
+            } else if (lang.toLowerCase() === "nodejs") {
+                languageStr += '<i class="fab fa-node-js"></i>'
+            } else if (lang.toLowerCase() === "css" || lang.toLowerCase() === "css3") {
+                languageStr += '<i class="fab fa-css3"></i>'
+            // } else if (lang.toLowerCase() === "kotlin") {
+            //     languageStr += '<i class="fab fa-kotlin"></i>'
+            } else if (lang.toLowerCase() === "vue.js") {
+                languageStr += '<i class="fab fa-vuejs"></i>'
+            } else if (lang.toLowerCase() === "php") {
+                languageStr += '<i class="fab fa-php"></i>'
+            } else {
+                languageStr += slide.languages[j];
+            }
+
+            languageStr += '</div>';
+        }
+
+        generatedSlideshowHtml += '\n <div class="project-wrapper col s12 m6 l4">\n' +
+            '                    <div class="project-card slideshow-item card blue-grey darken-1" data-href="' + slide.href + '">\n' +
             '                        <div class="white-text">\n' +
-            '                            <img class="card-bg" src="'+ slide.bg +'">\n' +
-            '                            <span class="card-title">'+slide.title+'</span>\n' +
-            '                            <img class="card-icon" src="'+slide.icon.replace("%cdn%","https://res.cloudinary.com/inventivetalent/image/upload/")+'">\n' +
-            '                            <p class="card-text">'+ (slide.description || "") + '</p>\n' +
+            '                            <img class="card-bg" src="' + slide.bg + '">\n' +
+            '                            <span class="card-title">' + slide.title + '</span>\n' +
+            '                            <img class="card-icon" src="' + slide.icon.replace("%cdn%", "https://res.cloudinary.com/inventivetalent/image/upload/") + '">\n' +
+            '                            <p class="card-text">' + (slide.description || "") + '</p>\n' +
+            '                            <div class="project-languages">\n' +
+            languageStr + '\n' +
+            '                            </div>\n' +
             '                        </div>\n' +
             '                    </div>\n' +
             '                </div>';

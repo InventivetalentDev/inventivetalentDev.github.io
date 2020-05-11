@@ -88,6 +88,18 @@ body::-webkit-scrollbar-thumb {
     height: auto;
 }
 
+.project-card .project-languages {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.4rem;
+}
+
+.project-card .project-languages .language {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 .project-card:hover{
     box-shadow: 0 0 8px $grey;
 }
