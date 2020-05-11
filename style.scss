@@ -92,12 +92,13 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     right: 0;
     bottom: 0;
-    font-size: 1.4rem;
+    padding-right: 5px;
 }
 
 .project-card .project-languages .language {
     padding-left: 3px;
     padding-right: 3px;
+    font-size: 1.4rem !important;
 }
 
 .project-card:hover{
