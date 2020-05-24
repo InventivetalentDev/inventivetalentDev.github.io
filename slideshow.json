@@ -102,5 +102,13 @@
     "icon": "%cdn%/brand/postbox/eye_letter-x256.png",
     "href": "https://github.com/InventivetalentDev/PostBoxObserver",
     "languages": ["Android", "Kotlin", "JavaScript", "HTML5"]
+  },
+  {
+    "title": "User-Agent.Dev",
+    "description": "Collection of code snippets for adding custom User-Agents to web requests",
+    "bg": "img/useragent-background.jpg",
+    "icon": "%cdn%/brand/ua/ua-x256.png",
+    "href": "https://user-agent.dev",
+    "languages": ["Vue.js", "NodeJS", "JavaScript", "HTML5"]
   }
 ]
