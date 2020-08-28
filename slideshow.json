@@ -110,5 +110,13 @@
     "icon": "%cdn%/brand/ua/ua-x256.png",
     "href": "https://user-agent.dev",
     "languages": ["Vue.js", "NodeJS", "JavaScript", "HTML5"]
+  },
+  {
+    "title": "capes.dev",
+    "description": "Minecraft Capes API, History & CDN",
+    "bg": "img/useragent-background.jpg",
+    "icon": "%cdn%/brand/capes/capes.png",
+    "href": "https://capes.dev",
+    "languages": ["NodeJS", "JavaScript", "HTML5"]
   }
 ]
