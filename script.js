@@ -18,10 +18,10 @@ $(document).ready(function () {
     $(".modal").modal();
     if (location.hash.length > 0) {
         if ("#imprint" === location.hash) {
-            M.Modal.getInstance($("#imprint-modal")).open();
+            window.open("https://legal.inventivetalent.org/imprint", "_self");
         }
         if ("#privacy" ===  location.hash) {
-            M.Modal.getInstance($("#privacy-modal")).open();
+            window.open("https://legal.inventivetalent.org/privacy", "_self");
         }
     }
 
