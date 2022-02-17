@@ -118,5 +118,13 @@
     "icon": "%cdn%/brand/capes/capes.png",
     "href": "https://capes.dev",
     "languages": ["NodeJS", "JavaScript", "HTML5"]
+  },
+  {
+    "title": "idle.page",
+    "description": "Literally just idle on a page",
+    "bg": "img/idlepage-background.jpg",
+    "icon": "img/idlepage.png",
+    "href": "https://idle.page",
+    "languages": ["JavaScript", "HTML5", "CSS3"]
   }
 ]
