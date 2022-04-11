@@ -126,5 +126,13 @@
     "icon": "img/idlepage.png",
     "href": "https://idle.page",
     "languages": ["JavaScript", "HTML5", "CSS3"]
+  },
+  {
+    "title": "(ar)r.place",
+    "description": "Collaborative pixel art",
+    "bg": "img/canvas-background.jpg",
+    "icon": "img/canvas.png",
+    "href": "https://arr.place",
+    "languages": ["TypeScript", "NodeJS", "HTML5", "CSS3"]
   }
 ]
