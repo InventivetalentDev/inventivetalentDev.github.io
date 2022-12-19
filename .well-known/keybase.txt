@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/inventivetalent
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://inventivetalent.org
+  * I am inventivetalent (https://keybase.io/inventivetalent) on keybase.
+  * I have a public key ASDkciyldhRqKRHH-D1CUhXaDIl7TZNijbX89norcv_XRQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101c11b05cfa671b7d674fc25393d439656306206693c4d9a0868ec806d63837baf0a",
+      "host": "keybase.io",
+      "kid": "0120e4722ca576146a2911c7f83d425215da0c897b4d93628db5fcf67a2b72ffd7450a",
+      "uid": "1187871a9a00b431acad4cde08d41d19",
+      "username": "inventivetalent"
+    },
+    "merkle_root": {
+      "ctime": 1671446495,
+      "hash": "c624afe55bf444a69251d820f4c10572ad5d3a12bf585865cd0321a83585cbe054f1c949d0693b1202532e30f9e160ce244b29d1bfdddbdd864e8a51028645a2",
+      "hash_meta": "1bd7d5b48f76115055e2ef0e19cd9ebab5e455db4e3b1f62d6b9db5ba2963284",
+      "seqno": 23737548
+    },
+    "service": {
+      "entropy": "JUCqWynSWYMc6wdQIwIITXma",
+      "hostname": "inventivetalent.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1671446515,
+  "expire_in": 504576000,
+  "prev": "42dd53851d22b8e22fc354ffa48a52e29289745c64d2f369fa815255810c603d",
+  "seqno": 176,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg5HIspXYUaikRx/g9QlIV2gyJe02TYo21/PZ6K3L/10UKp3BheWxvYWTES5cCzLDEIELdU4UdIrjiL8NU/6SKUuKSiXRcZNLzafqBUlWBDGA9xCCmrXK3WYMwTUHiMD+wD8KWwKe0HfltU7jJcHbUgc60hQIBwqNzaWfEQHkvJi5v55MdRGN2xEcGJzz/3zkpT0OiW6WJGIGl2zoT7mWWCGyTpDnB0VEa6yIv7kb+fpjcnP6byJe7D2K/qw+oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBQO44fQ7ab8VkOoDHOTjOCxYe3jnGAnaFRSCep7tEoJqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/inventivetalent
+
+==================================================================
