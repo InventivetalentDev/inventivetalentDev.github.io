@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Twitter",
+    "href": "https://twitter.com/Inventivtalent",
+    "icon": "twitter"
+  },
+  {
+    "title": "GitHub",
+    "href": "https://github.com/InventivetalentDev",
+    "icon": "github"
+  },
+  {
+    "title": "Discord",
+    "href": "https://discord.gg/nzAdvPc",
+    "icon": "discord"
+  },
+  {
+    "title": "Keybase",
+    "href": "https://keybase.io/inventivetalent",
+    "icon": "keybase"
+  },
+  {
+    "title": "Mastodon",
+    "href": "https://tech.lgbt/@inventivetalent",
+    "icon": "mastodon"
+  },
+  {
+    "title": "LinkedIn",
+    "href": "https://www.linkedin.com/in/inventivetalent/",
+    "icon": "linkedin"
+  },
+  {
+    "title": "NPM.js",
+    "href": "https://www.npmjs.com/~inventivetalent",
+    "icon": "npm"
+  },
+  {
+    "title": "YouTube",
+    "href": "https://www.youtube.com/inventivetalent",
+    "icon": "youtube"
+  },
+  {
+    "title": "PayPal",
+    "href": "https://www.paypal.me/inventivetalent",
+    "icon": "paypal"
+  },
+  {
+    "title": "Patreon",
+    "href": "https://www.patreon.com/inventivetalent",
+    "icon": "patreon"
+  }
+]
