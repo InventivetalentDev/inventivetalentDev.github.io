@@ -4,8 +4,10 @@
   "description": "",
   "main": "anims.js",
   "scripts": {
-    "build": "npm run style && node ./scripts/build.js",
-    "style": "sass --style compressed style.scss style.css && sass --style compressed logo.scss logo.css"
+    "build": "npm run serve && npm run style",
+    "style": "sass --style compressed assets/css/style.scss style.css && sass --style compressed assets/css/logo.scss logo.css",
+    "serve": "bundle exec jekyll serve",
+    "watch": "bundle exec jekyll serve --livereload"
   },
   "repository": {
     "type": "git",

@@ -6,13 +6,13 @@
     <head>
         <title>{{ site.title }}</title>
 
-        <link rel="stylesheet" href="logo.css">
+        <link rel="stylesheet" href="{{ '/assets/css/logo.css' | relative_url }}">
 
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" as="style" onload="this.rel='stylesheet'">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" as="style" onload="this.rel='stylesheet'">
         <link rel="preload" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" as="style" onload="this.rel='stylesheet'">
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
         <link id="favicon" rel="shortcut icon" type="image/ico" href="favicon.ico">
 
@@ -154,7 +154,7 @@
                                     {% when "nodejs" %}
                                     <i class="fab fa-node-js"></i>
                                     {% when "css", "css3" %}
-                                    <i class="fab fa-css"></i>
+                                    <i class="fab fa-css3"></i>
                                     {% when "vue.js", "vuejs" %}
                                     <i class="fab fa-vuejs"></i>
                                     {% when "php" %}
